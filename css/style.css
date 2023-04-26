@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #F5EBEB;
+}
+
+.navegacion-logo{
+
+    width: 100px;
+   
+}
+
+.navegacion ul li a {
+
+    text-decoration: none;
+    
+    color: black;
+}
+
+.navegacion ul li{
+    display: inline-block;
+}
+.navegacion{
+    margin: 0 0 10px 0; 
+    width: auto;
+    height: auto;
+}
+.navegacion ul {   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.main{
+
+    background-color: #F5EBEB;
+    margin: 10px 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "imagen1-main imagen1-main imagen1-main"
+    "imagen2-main main-importante main-importante";
+}
+.imagen1-main{
+
+    margin: 10px 0;
+    width: auto;
+    height: 650px;
+    grid-area:imagen1-main;
+}
+.titulo-main{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.imagen2-main{
+    grid-area: imagen2-main;
+}
+.main-importante{
+    grid-area: main-importante;
+}
+footer{
+    background-color: #F5EBEB;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+img{
+
+    width: 100%;
+    height: 100%;
+}
+
+.formulario{
+
+background-color: #F5EBEB;
+padding: 200px;
+}
+.ubicacion{
+    padding: 100px;
+    background-color: #F5EBEB;
+    text-align: center;
+}
+.ubicacion-titulo{
+    font-size: 20px;
+}
+
+
+@media(max-width: 700px ) {
+    .main{
+
+        background-color: #F5EBEB;
+        margin: 10px 0 ;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imagen1-main "
+        "main-importante";
+    }
+    .imagen1-main{
+    
+        margin: 10px 0;
+        width: auto;
+        height: 650px;
+        grid-area:imagen1-main;
+    }
+    .titulo-main{
+        text-align: center;
+        font-size: 40px;
+        
+    }
+    
+    .imagen2-main{
+        display: none;
+    }
+    .main-importante{
+        grid-area: main-importante;
+    }
+}
