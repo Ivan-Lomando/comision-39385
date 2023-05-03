@@ -137,6 +137,16 @@ img{
 .quienes-somos-parrafo{
     text-align: center;
 }
+.main-activdades{
+    background-color: #F5EBEB;
+    margin: 10px 0 ;
+}
+.actividades-titulo{
+    text-align: center;
+}
+.actividades-parraf{
+    text-align: center;
+}
 @media(max-width: 700px ) {
     .main{
 
