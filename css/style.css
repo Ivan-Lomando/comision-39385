@@ -74,6 +74,7 @@ footer{
     margin: 10px 0 0 0;
     display: flex;
     justify-content: space-between;
+    
 
 }
 img{
@@ -82,11 +83,8 @@ img{
     height: 100%;
 }
 
-.formulario{
 
-background-color: #F5EBEB;
-padding: 200px;
-}
+
 .ubicacion{
     padding: 100px;
     background-color: #F5EBEB;
@@ -95,8 +93,50 @@ padding: 200px;
 .ubicacion-titulo{
     font-size: 20px;
 }
+.ubicacion-mapa{
+    margin: auto;
+    width: 90% ;
+    max-width: 400px;
+}
+.main-contacto{
+    background-color: #F5EBEB;
+    margin: 10px 0 ;
+    display: flex;
+}
+.formulario{
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 100px;
 
+}
 
+.formulario-contenedor{
+    margin-top: 50px;
+    display: grid;
+    gap: 25px;
+}
+.main-quienessomos{
+    background-color: #F5EBEB;
+    margin: 10px 0 ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "imagen importante importante"
+}
+.main-importante-1{
+    grid-area: importante;
+}
+.main-imagen{
+    grid-area: imagen ;
+}
+.quienes-somos-titulo{
+    text-align: center;
+}
+.quienes-somos-parrafo{
+    text-align: center;
+}
 @media(max-width: 700px ) {
     .main{
 
@@ -127,5 +167,49 @@ padding: 200px;
     }
     .main-importante{
         grid-area: main-importante;
+    }
+
+    footer{
+        background-color: #F5EBEB;
+        margin: 10px 0 ;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+        "redes-sociales"
+        "telefono"
+        "ubicacion"
+    }
+    .redes-sociales{
+        grid-area:redes-sociales;
+    }
+    .telefono{
+        grid-area: telefono;
+    }
+    .ubicacion{
+        grid-area:ubicacion ;
+    }
+    .main-quienessomos{
+        background-color: #F5EBEB;
+        margin: 10px 0 ;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imagen"
+        "importante"
+    }
+    .main-importante-1{
+        grid-area: importante;
+    }
+    .main-imagen{
+        grid-area: imagen ;
+
+    }
+    .quienes-somos-titulo{
+        text-align: center;
+    }
+    .quienes-somos-parrafo{
+        text-align: center;
     }
 }
